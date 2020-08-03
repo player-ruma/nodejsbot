@@ -36,9 +36,14 @@ client.on('message', (message) => {
 });
 
 client.on('message', (message) => {
-  if(message.content === '안녕') {
+  if(message.content === '!안녕') {
     message.reply('안녕하세요');
-});
+}
+
+client.on('message', (message) => {
+  if(message.content === '!ANNA') {
+    message.reply('출석은 꾸준히! 대화도 많이! ANNA클랜 살리자!');
+}
 
   if(message.content == 'embed') {
     let img = 'https://cdn.discordapp.com/icons/419671192857739264/6dccc22df4cb0051b50548627f36c09b.webp?size=256';
